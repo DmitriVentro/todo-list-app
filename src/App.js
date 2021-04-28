@@ -17,9 +17,9 @@ function App() {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
             .then(response => response.json())
-            .then(todos => {
+            .then(todoes => {
                 setTimeout(() => {
-                    setTodos(todos)
+                    setTodos(todoes)
                     setLoading(false)
                 }, 2000);
             })
